@@ -1,0 +1,22 @@
+import express from "express";
+// import { errorHandler } from "./middleware/errorMiddleware"
+// import { corsMiddleware } from "./middleware/corsMiddleware";
+// import registerRouter from "@routes/index";
+// import { Knex } from "knex";
+
+// db: Knex
+export const createApp = () => {
+  const app = express();
+
+  console.log('testing pipeline, testing only')
+
+  /// console.log("🧪 DB IN APPLICATION:", db);
+
+
+  app.use(express.json());
+//   app.use(corsMiddleware);
+//   app.use(registerRouter(db))
+//   app.use(errorHandler)
+
+  return app
+}
