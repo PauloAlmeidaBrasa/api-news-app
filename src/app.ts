@@ -2,15 +2,15 @@ import express from "express";
 // import { errorHandler } from "./middleware/errorMiddleware"
 // import { corsMiddleware } from "./middleware/corsMiddleware";
 // import registerRouter from "@routes/index";
-// import { Knex } from "knex";
+import { Knex } from "knex";
 
 // db: Knex
-export const createApp = () => {
+export const createApp = (db: Knex) => {
   const app = express();
 
   console.log('testing pipeline, testing only')
 
-  /// console.log("🧪 DB IN APPLICATION:", db);
+  // console.log("🧪 DB IN APPLICATION:", db);
 
 
   app.use(express.json());

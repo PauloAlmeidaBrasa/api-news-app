@@ -26,5 +26,14 @@
     "@types/node": "^25.3.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
+  },
+  "moduleNameMapper": {
+  "^@routes/(.*)$": "<rootDir>/src/routes/$1",
+  "^@controllers/(.*)$": "<rootDir>/src/controllers/$1",
+  "^@utils/(.*)$": "<rootDir>/src/utils/$1",
+  "^@config/(.*)$": "<rootDir>/src/config/$1",
+  "^@services/(.*)$": "<rootDir>/src/services/$1",
+  "^@repositories/(.*)$": "<rootDir>/src/repositories/$1"
   }
+  
 }

@@ -5,6 +5,15 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "paths": {
+      "@routes/*": ["routes/*"],
+      "@controllers/*": ["controllers/*"],
+      "@utils/*": ["utils/*"],
+      "@config/*": ["config/*"],
+      "@services/*": ["services/*"],
+      "@repositories/*": ["repositories/*"]
+    },
   }
 }
