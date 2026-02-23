@@ -1,7 +1,7 @@
 import express from "express";
 // import { errorHandler } from "./middleware/errorMiddleware"
 // import { corsMiddleware } from "./middleware/corsMiddleware";
-// import registerRouter from "@routes/index";
+import registerRouter from "@routes/index";
 import { Knex } from "knex";
 
 // db: Knex
@@ -15,7 +15,7 @@ export const createApp = (db: Knex) => {
 
   app.use(express.json());
 //   app.use(corsMiddleware);
-//   app.use(registerRouter(db))
+  app.use(registerRouter(db))
 //   app.use(errorHandler)
 
   return app

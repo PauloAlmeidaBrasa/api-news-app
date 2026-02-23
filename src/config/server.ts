@@ -2,7 +2,7 @@ import { createApp } from "../app"
 import "dotenv/config"
 import db from "./db/db"
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 5000
 
 const app = createApp(db)
 
