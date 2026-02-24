@@ -1,5 +1,5 @@
 import { Router } from "express";
-import NewsController from "@controllers/newsController";
+import NewsController from "@controllers/news/newsController";
 import { Knex } from "knex";
 
 
@@ -9,10 +9,7 @@ const newsRoutes = (db: Knex) => {
   const controller = new NewsController(db);
 
   router.get("/news", controller.index)
-//   router.get("/user/:id", controller.getById);
-//   router.post("/user/create", controller.store)
-//   router.patch("/user/update/:id", controller.update)
-//   router.post("/user/delete/:id", controller.delete)
+  //router.get("/user/:id", controller.getById);
 
   return router;
 };
